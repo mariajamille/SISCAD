@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <title>SisCad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="inicio.png">
+    <link rel="stylesheet" href="sc.css">
+</head>
+
+<body>
+    <!-----------------------Nav------------------------------------->
+    <nav id="header">
+        <h1>SYSCAD</h1>
+        <div id="icon">
+            <l><img src="avatar.png" height="35" width="35"></l>
+            <div class="logo">
+                <l>Fulano Junior</l>
+            </div>
+        </div>
+
+        <div onclick="button()" id="botao_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </div>
+
+        <!--------------------Menu------------------------------>
+        <div id="menu">
+            <div onclick="button()" id="menuFechar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </div>
+
+            <div class="dados">
+                <img src="avatar.png" height="55" width="55">
+                <div class="nomefj">
+                    Fulano Junior<br>
+                    <div class="nomefj2">
+                        <div class="on">
+                            <div id="circulo"></div>
+                            Online
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+            </div><br><br>
+
+            <div id="m2">
+                Menu
+            </div>
+
+            <div class="group">
+                <img src="group.png" height="45" width="45">
+                <div id="us">
+                    Usuários
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-----------------------Elements------------------------>
+    <div tabindex="0" onclick="closeSidebar()" id="content">
+            <div class="in">
+                <div class="inicio">
+                    Usuários
+                </div>
+
+                <div class="inicio2">
+                    Gerenciamento de usuários do sistema
+                </div>
+            </div><br>
+
+            <div id="principal">
+                <section class="tabela">
+                    <div class="config_table">
+                    <table>
+                        <tr id="titulo">
+                            <h2>Lista de Usuários</h2>
+                            <td>Foto</td>
+                            <td>Nome</td>
+                            <td>E-mail</td>
+                            <td>Admin</td>
+                            <td>Criado em</td>
+                            <td>Ações</td>
+                        </tr>
+                        <tr id="cor">
+                            <td>
+                                <div id="foto1">
+                                    <img src="avatar2.png" height="42" width="42">
+                                </div>
+                            </td>
+                            <td>Fulano</td>
+                            <td>fulano@syscad.com.br</td>
+                            <td>Sim</td>
+                            <td>02/04/2018</td>
+                            <td><a href="">Editar</a><a href="" id="v">Excluir</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="foto1">
+                                    <img src="avatar2.png" height="42" width="42">
+                                </div>
+                            </td>
+                            </td>
+                            <td>Fulano</td>
+                            <td>fulano@syscad.com.br</td>
+                            <td>Sim</td>
+                            <td>02/04/2018</td>
+                            <td><a href="">Editar</a><a href="" id="v">Excluir</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="foto1">
+                                    <img src="avatar2.png" height="42" width="42">
+                                </div>
+                            </td>
+                            <td>Fulano</td>
+                            <td>fulano@syscad.com.br</td>
+                            <td>Sim</td>
+                            <td>02/04/2018</td>
+                            <td><a href="">Editar</a><a href="" id="v">Excluir</a></td>
+                        </tr>
+                        <td>
+                            <div id="foto1">
+                                <img src="avatar2.png" height="42" width="42">
+                            </div>
+                        </td>
+                        <td>Fulano</td>
+                        <td>fulano@syscad.com.br</td>
+                        <td>Sim</td>
+                        <td>02/04/2018</td>
+                        <td><a href="">Editar</a><a href="" id="v">Excluir</a></td>
+                        </tr>
+            </div>
+        </div>
+            </table>
+        </section>
+        <div class="center">
+
+            <div id="home">
+                <div class="h">
+                    <img src="home.png" height="25" width="25">
+                </div>
+                <div id="h2">
+                    Home > Usuários
+                </div>
+            </div>
+
+
+            <div class="q">
+                <div class="quadrado">
+                    <div id="number">
+                        44<br>
+                    </div>
+                    <div id="nv">
+                        Novos Usuários
+                    </div>
+                </div>
+
+
+                <div class="quadrado2">
+                    <div id="number">
+                        15<br>
+                    </div>
+                    <div id="nv">
+                        Administradores
+                    </div>
+                </div>
+            </div>
+
+            <div class="formulario">
+                <form action="">
+                    <legend><b>Novo Usuário</b></legend>
+                    <br>
+
+                    <label="nome"><b>Nome</b></label>
+                        <div class="inputBox">
+                            <input type="text" name="nome" id="nome" class="inputUser"
+                                placeholder="Digite o nome do usuário" required>
+                        </div><br>
+
+                        <b>Gênero</b><br><br>
+
+                        <input type="radio" id="feminino" name="genero" value="feminino" required>
+                        <label="feminino">Feminino</label><br>
+                            <input type="radio" id="masculino" name="genero" value="masculino" required>
+                            <label="masculino">Masculino</label><br>
+                                <br><br>
+
+
+                                <label="data"><b>Nascimento</b></label>
+                                    <div class="inputBox">
+                                        <input type="date" name="data_nascimento" id="data" class="inputUser" required>
+                                    </div><br><br>
+
+                                    <label="pais"><b>País</b></label>
+                                        <div class="inputBox">
+                                            <SELECT NAME="paises" class="inputUser" placeholder="Selecione um país"
+                                                id="largura" required>
+                                                <OPTION VALUE="se">Selecione um país</OPTION required>
+                                                <OPTION VALUE="ar">Argentina</OPTION>
+                                                <OPTION VALUE="bo">Bolívia</OPTION>
+                                                <OPTION VALUE="br">Brasil</OPTION>
+                                                <OPTION VALUE="br">Chile</OPTION>
+                                                <OPTION VALUE="br">Colômbia</OPTION>
+                                                <OPTION VALUE="br">Equador</OPTION>
+                                                <OPTION VALUE="br">Guiana</OPTION>
+                                                <OPTION VALUE="br">Guiana Francesa</OPTION>
+                                                <OPTION VALUE="pa">Paraguai</OPTION>
+                                                <OPTION VALUE="pa">Peru</OPTION>
+                                                <OPTION VALUE="pa">Suriname</OPTION>
+                                                <OPTION VALUE="pa">Uruguai</OPTION>
+                                                <OPTION VALUE="ve">Venezuela</OPTION>
+                                            </SELECT><br><br>
+                                        </div>
+
+
+                                        <label="estado"><b>E-mail</b></label>
+                                        <div class="inputBox">
+                                            <input type="text" name="estado" id="estado" class="inputUser"
+                                                placeholder="Digite o e-mail" required>
+                                        </div><br>
+
+                                        <label="senha"><b>Senha</b></label>
+                                            <div class="inputBox">
+                                                <input type="text" name="endereco" id="endereco" class="inputUser"
+                                                    placeholder="Crie uma senha" required><br><br>
+                                            </div>
+
+                                            <label="foto"><b>Foto</b></label>
+                                                <div class="inputBox_two">
+                                                    <input type="file" id="avatar" name="avatar"
+                                                        value="Escolher ficheiro">
+                                                </div>
+                                                <br><br>
+
+                                                <div class="inputBox">
+                                                    <input type="checkbox">
+                                                    <label="op"><b>Administrador</b></label><br>
+                                                </div><br>
+
+
+                                                <input type="submit" value="Salvar" id="salvar">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!--------------JAVASCRIPT----------->
+<script src="script.js"></script>
+
+</html>
